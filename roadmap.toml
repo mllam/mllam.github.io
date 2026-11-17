@@ -1,0 +1,29 @@
+# Configuration of the roadmap served at https://mllam.github.io/roadmap
+# Built by github-milestone-roadmap (https://github.com/mllam/github-milestone-roadmap);
+# see that repository's README and examples/roadmap.toml for all options.
+
+title = "MLLAM Roadmap"
+heading = "Community Roadmap"
+subtitle = "Upcoming work across the MLLAM packages"
+description = "Roadmap for the MLLAM community packages."
+source_url = "https://github.com/mllam"
+cache_key = "mllam-roadmap"
+
+[home]
+text = "MLLAM"
+url = "/"
+
+[[repos]]
+owner = "mllam"
+name = "neural-lam"
+description = "Machine learning weather model training and inference package."
+
+[[repos]]
+owner = "mllam"
+name = "mllam-data-prep"
+description = "Data preparation workflows for MLLAM model development."
+
+[[repos]]
+owner = "mllam"
+name = "weather-model-graphs"
+description = "Graph structures and utilities for weather model domains."

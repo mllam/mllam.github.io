@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="mllam: an open community developing machine-learning weather models for limited area modelling.">
+    <title>MLLAM</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="/">MLLAM</a>
+        <div class="nav-links">
+          <a href="#packages">Packages</a>
+          <a href="roadmap/">Roadmap</a>
+          <a href="https://github.com/mllam" rel="noreferrer">GitHub</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <h1>Machine learning for limited area weather modelling</h1>
+        <p class="lead">
+          mllam is an open community developing data-driven weather forecasting models for
+          limited area modelling (LAM), together with the tools to prepare training data,
+          build model graphs and evaluate the results. All development happens in the open
+          on GitHub, and contributions are welcome.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/mllam" rel="noreferrer">mllam on GitHub</a>
+          <a class="button" href="https://kutt.to/mllam" rel="noreferrer">Join us on Slack</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="packages" class="section" aria-labelledby="packages-heading">
+        <h2 id="packages-heading">Packages</h2>
+        <div class="cards">
+          <article class="card">
+            <h3><a href="https://github.com/mllam/neural-lam" rel="noreferrer">neural-lam</a></h3>
+            <p>
+              Graph-based neural weather prediction models for limited area modelling,
+              built on PyTorch and PyTorch Geometric. Includes LAM versions of the
+              Keisler (2022) graph model, GraphCast and the hierarchical model from
+              Oskarsson et al. (2023), for training and running forecasts.
+            </p>
+            <p class="card-links">
+              <a href="https://github.com/mllam/neural-lam" rel="noreferrer">Repository</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3><a href="https://github.com/mllam/mllam-data-prep" rel="noreferrer">mllam-data-prep</a></h3>
+            <p>
+              Prepares training datasets for data-driven weather models from a declarative
+              YAML config: data sources, variables, transformations and how they map onto
+              the model's inputs. Produces training-optimised zarr datasets.
+            </p>
+            <p class="card-links">
+              <a href="https://github.com/mllam/mllam-data-prep" rel="noreferrer">Repository</a>
+              <a href="https://pypi.org/project/mllam-data-prep/" rel="noreferrer">PyPI</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3><a href="https://github.com/mllam/weather-model-graphs" rel="noreferrer">weather-model-graphs</a></h3>
+            <p>
+              Creates, visualises and stores the graphs used by message-passing,
+              graph-based weather models, such as the graphs neural-lam trains on.
+            </p>
+            <p class="card-links">
+              <a href="https://github.com/mllam/weather-model-graphs" rel="noreferrer">Repository</a>
+              <a href="weather-model-graphs/">Documentation</a>
+              <a href="https://pypi.org/project/weather-model-graphs/" rel="noreferrer">PyPI</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section" aria-labelledby="roadmap-heading">
+        <h2 id="roadmap-heading">Roadmap</h2>
+        <p>
+          The <a href="roadmap/">community roadmap</a> shows the work planned and proposed for
+          upcoming releases of the packages above. It is read live from GitHub: issues and pull
+          requests on a <code>vX.Y.Z</code> milestone are on the roadmap, and those on a
+          <code>vX.Y.Z (proposed)</code> milestone are discussed at the next community dev meeting.
+        </p>
+        <p><a class="button" href="roadmap/">View the roadmap</a></p>
+      </section>
+
+      <!--
+        Maintainers: add further sections here (e.g. publications, meetings,
+        how to contribute). Keep each one a <section class="section"> with an <h2>.
+      -->
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        This site is maintained by the mllam community in
+        <a href="https://github.com/mllam/mllam.github.io" rel="noreferrer">mllam/mllam.github.io</a>.
+        Suggestions and pull requests are welcome.
+      </p>
+    </footer>
+  </body>
+</html>
